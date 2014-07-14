@@ -4402,7 +4402,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 5px 14px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 15px;
+  border-radius: 35px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
@@ -6171,6 +6171,7 @@ button.close {
     display: none !important;
   }
 }
+/* My Stuff */
 /* 
 
 vBlog
@@ -6178,6 +6179,10 @@ Components.less
 @derrybirkett
 
 */
+/* Padding for mobile */
+body {
+  padding: 30px;
+}
 /* HEADER */
 .header {
   margin-top: 100px;
@@ -6187,10 +6192,11 @@ Components.less
   width: 80px;
   background-repeat: no-repeat;
   background-size: cover;
-  float: right;
+  margin: 0 auto;
 }
 .site-details {
   padding-top: 20px;
+  text-align: center;
 }
 /* POST */
 .post {
@@ -6198,11 +6204,12 @@ Components.less
 }
 .post img {
   width: 100%;
-  margin: 40px 0px;
+  margin: 20px 0px 30px;
 }
+/* Pagination buttons */
 /* Typography Tweaks */
 h1 {
-  font-size: 48px;
+  font-size: 38px;
   letter-spacing: -1px;
   line-height: 1.2em;
 }
@@ -6218,3 +6225,33 @@ h1 {
   line-height: 2em;
   font-weight: 100;
 }
+/* Responsive Tweaks */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*
+
+vBlog
+md.less
+Desktop up styles
+
+*/
+  /* Remove extra mobile padding for desktop */
+  body {
+    padding: 0px;
+  }
+  .avatar {
+    float: right;
+  }
+  .site-details {
+    text-align: left;
+  }
+  h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */

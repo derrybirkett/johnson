@@ -11,8 +11,21 @@ by @derrybirkett
 @import "../bower_components/bootstrap/less/mixins.less";
 @import "../bower_components/bootstrap/less/bootstrap.less";
 
-
-
-
+/* My Stuff */
 @import "components.less";
 @import "typography.less";
+
+/* Responsive Tweaks */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+    @import "md.less";
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {}

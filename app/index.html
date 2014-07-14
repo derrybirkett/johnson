@@ -27,13 +27,60 @@
 
         <div class="wrapper container">
 
-            <div class="sidebar col-md-3">
-                Sidebar
+            <!-- Header -->
+            <div class="header row">
+
+                <!-- Avatar -->
+                <div class="col-md-2 col-md-offset-1">
+                    <figure class="avatar img-circle" style="background-image:url('http://www.gravatar.com/avatar/b3af8a49d41a465184e7620b936ccbe2.png')";></figure>
+                </div>
+
+                <!-- Blog title and bio -->
+                <div class="site-details col-md-6">
+                   <p class="site-title">Derry Birkett</p>
+                   <p class="site-description">Blogging about nothing.</p>
+                </div>
             </div>
 
-            <div class="main col-md-5 col-md-offset-1">
-                Main content to go here.
-            </div>
+            <!-- POST -->
+            <section class="main row">
+                <article class="post col-md-6 col-md-offset-3">
+                    <h1>Getting Started | GitHub API</h1>
+                    <p>The <code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
+                </article>
+            </section>
+
+            <!-- POST -->
+            <section class="main row">
+                <article class="post col-md-6 col-md-offset-3">
+                    <h1>Get your own user profile</h1>
+                    <figure class="featured"><img src="http://lorempixel.com/800/400/food" class="img-rounded" /></figure>
+                    <p>This time, in addition to the same set of public information we retrieved for <a href="/">@defunkt[7]</a> earlier, you <em>should</em> also see the non-public information for your user profile. For example, you’ll see a plan object in the response which gives details about the GitHub plan for the account.<code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
+                </article>
+            </section>
+
+            <!-- POST -->
+            <section class="main row">
+                <article class="post col-md-6 col-md-offset-3">
+                    <h1>Get your own user profile</h1>
+                    <p>This time, in addition to the same set of public information we retrieved for <a href="/">@defunkt[7]</a> earlier, you <em>should</em> also see the non-public information for your user profile. For example, you’ll see a plan object in the response which gives details about the GitHub plan for the account.i<blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
+                </article>
+            </section>
+
+            <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+
+            <footer class="footer row">
+                <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                <p class="small">Copyright 2014 © Derry Birkett.  If you <em>do</em> quote - please link back.</p>
+                </div>
+            </footer>
 
         </div>
 
@@ -43,6 +90,9 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+
+        <script type="text/javascript" src="//use.typekit.net/grj4omk.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

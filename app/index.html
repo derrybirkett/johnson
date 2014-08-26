@@ -27,62 +27,44 @@
 
         <div class="wrapper container">
 
-            <!-- Header -->
-            <div class="header row">
+            <!-- LEFTCOL -->
+            <div class="col-md-3">
 
-                <!-- Avatar -->
-                <div class="col-md-2 col-md-offset-1">
-                    <figure class="avatar img-circle" style="background-image:url('http://www.gravatar.com/avatar/b3af8a49d41a465184e7620b936ccbe2.png')";></figure>
-                </div>
+                <!-- SIDEBAR-->
+                <section class="sidebar">
 
-                <!-- Blog title and bio -->
-                <div class="site-details col-md-6">
-                   <p class="site-title">Derry Birkett</p>
-                   <p class="site-description">Blogging about nothing.</p>
-                </div>
+                    <!-- Avatar -->
+                    <div class="row">
+                        <figure class="avatar img-circle" style="background-image:url('http://www.gravatar.com/avatar/b3af8a49d41a465184e7620b936ccbe2.png')";></figure>
+                    </div>
+
+                    <!-- Blog title and bio -->
+                    <div class="row">
+                        <p class="site-title">Derry Birkett</p>
+                        <p class="site-description">Blogging about nothing.</p>
+                        <p class="small">Copyright 2014 © <a href="/">@derrybirkett.</a>  If you <em>do</em> quote - please link back.</p>
+                    </div>
+                </section>
+
             </div>
 
-            <!-- POST -->
-            <section class="main row">
-                <article class="post col-md-6 col-md-offset-3">
-                    <h1>Getting Started | GitHub API</h1>
-                    <p>The <code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
-                </article>
-            </section>
 
-            <!-- POST -->
-            <section class="main row">
-                <article class="post col-md-6 col-md-offset-3">
-                    <h1>Get your own user profile</h1>
-                    <figure class="featured"><img src="http://lorempixel.com/800/400/food" class="img-rounded" /></figure>
-                    <p>This time, in addition to the same set of public information we retrieved for <a href="/">@defunkt[7]</a> earlier, you <em>should</em> also see the non-public information for your user profile. For example, you’ll see a plan object in the response which gives details about the GitHub plan for the account.<code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
-                    <p class="more-link"><a href="/">Read More</a></p>
-                </article>
-            </section>
+            <!-- MAIN COLUMN-->
+            <div class="col-md-8 col-md-offset-1">
 
-            <!-- POST -->
-            <section class="main row">
-                <article class="post col-md-6 col-md-offset-3">
-                    <h1>Get your own user profile</h1>
-                    <p>This time, in addition to the same set of public information we retrieved for <a href="/">@defunkt[7]</a> earlier, you <em>should</em> also see the non-public information for your user profile. For example, you’ll see a plan object in the response which gives details about the GitHub plan for the account.i<blockquote>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
-                </article>
-            </section>
+                <!-- POST -->
+                <section class="main row">
+                    <article class="post col-md-12">
+                        <h1>Getting Started | GitHub API</h1>
+                        <p>The <code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
+                    </article>
+                </section>
 
-            <ul class="pager">
-                <li><a href="#">Previous</a></li>
-                <li><a href="#">Next</a></li>
-            </ul>
-
-            <footer class="footer row">
-                <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                <p class="small">Copyright 2014 © <a href="/">@derrybirkett.</a>  If you <em>do</em> quote - please link back.</p>
-                </div>
-            </footer>
-
+                <ul class="pager">
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </div><!-- end column -->
         </div>
 
 

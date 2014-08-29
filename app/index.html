@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <body>
+    <body class="index">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -28,35 +28,49 @@
         <div class="wrapper container">
 
             <!-- LEFTCOL -->
-            <div class="col-md-3">
+            <div class="col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
 
                 <!-- SIDEBAR-->
-                <section class="sidebar">
+                <aside class="sidebar">
 
-                    <!-- Avatar -->
-                    <div class="row">
-                        <figure class="avatar img-circle" style="background-image:url('http://www.gravatar.com/avatar/b3af8a49d41a465184e7620b936ccbe2.png')";></figure>
-                    </div>
+                    <section class="bio">
+                        <!-- Avatar -->
+                        <div class="row">
+                            <figure class="avatar img-circle" style="background-image:url('http://www.gravatar.com/avatar/b3af8a49d41a465184e7620b936ccbe2.png')";></figure>
+                        </div>
 
-                    <!-- Blog title and bio -->
-                    <div class="row">
-                        <p class="site-title">Derry Birkett</p>
-                        <p class="site-description">Blogging about nothing.</p>
-                        <p class="small">Copyright 2014 © <a href="/">@derrybirkett.</a>  If you <em>do</em> quote - please link back.</p>
-                    </div>
-                </section>
+                        <!-- Blog title and bio -->
+                        <header class="about row">
+                            <h1 class=".h4">Derry Birkett</h1>
+                            <p class="small">Blogging about nothing, because we all know what the girls love don't we?  Oh yes,and then some. </p>
+                        </header>
+
+                        <!-- Footer --> 
+                        <footer class="row">
+                            <p class="small">© 2014 If you <em>do</em> quote - please link back <a href="/">@derrybirkett</a></p>
+                        </footer>
+                    </section>
+                </aside>
 
             </div>
 
 
             <!-- MAIN COLUMN-->
-            <div class="col-md-8 col-md-offset-1">
+            <div class="col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
 
                 <!-- POST -->
                 <section class="main row">
                     <article class="post col-md-12">
                         <h1>Getting Started | GitHub API</h1>
-                        <p>The <code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header.</p>
+                        <p>The <code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header... <a href="/" class="more-link">Continue</a></p>
+                    </article>
+                </section>
+
+                <!-- POST -->
+                <section class="main row">
+                    <article class="post col-md-12">
+                        <h1>Getting Started | GitHub API</h1>
+                        <p>The <code>-u</code> flag sets the username, and cURL will prompt you for the password. You can use -u "username:password" to avoid the prompt, but this leaves your password in shell history and isn’t recommended. When authenticating, you should see your rate limit bumped to 5,000 requests an hour, as indicated in the X-RateLimit-Limit header... <a href="/" class="more-link">Continue</a></p>
                     </article>
                 </section>
 
@@ -65,7 +79,11 @@
                     <li><a href="#">Next</a></li>
                 </ul>
             </div><!-- end column -->
+
+            <!-- RIGHTCOL -->
+            <div class="col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1"> </div>
         </div>
+
 
 
         <!-- build:js scripts/vendor.js -->
